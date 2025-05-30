@@ -654,11 +654,6 @@ local WindowName = SetProps(MakeElement("Label", WindowConfig.Name, 14), {
 		MainWindow.Visible = false
 		MobileReopenButton.Visible = true
 		UIHidden = true
-		OrionLib:MakeNotification({
-			Name = "Interface Hidden",
-			Content = "Tap Left Control to reopen the interface",
-			Time = 5
-		})
 		WindowConfig.CloseCallback()
 	end)
 
